@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StarredFragment"
+    android:background="@color/primary_grey">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/starred_bg"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Coming soon. Stay tuned :)"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="@color/white_grey"
+        android:layout_gravity="center"
+        android:layout_marginBottom="75sp"
+        android:fontFamily="@font/chopin_script"
+        />
+
+</FrameLayout>

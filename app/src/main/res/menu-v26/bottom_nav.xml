@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title=""
+        android:id="@+id/homeIcon"
+        android:icon="@drawable/home_icon"
+        android:iconTintMode="add"
+        />
+
+    <item android:title=""
+        android:id="@+id/starIcon"
+        android:icon="@drawable/star_icon"/>
+
+    <item android:title=""
+        android:id="@+id/bellIcon"
+        android:icon="@drawable/bell_icon"/>
+
+    <item android:title=""
+        android:id="@+id/userIcon"
+        android:icon="@drawable/user_icon"/>
+</menu>

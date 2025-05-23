@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Unity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.Unity" parent="Base.Theme.Unity" />
+
+    <style name="Theme.MyApp.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/primary_grey</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/unity_splash</item>
+        <item name="windowSplashScreenAnimationDuration">1900</item>
+        <item name="postSplashScreenTheme">@style/Theme.Unity</item>
+    </style>
+
+</resources>

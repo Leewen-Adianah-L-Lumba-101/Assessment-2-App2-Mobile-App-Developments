@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking2PageActivity"
+    android:background="@color/primary_grey"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:rowCount="5"
+            android:padding="20dp"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/backBookingBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_square_left_icon"
+                android:background="@android:color/transparent"
+                />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:rowCount="7"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/displayImagePlace"
+                    android:layout_height="300dp"
+                    android:layout_width="fill_parent"
+                    android:background="@drawable/button_stroke"
+                    android:scaleType="centerCrop"
+                    />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:background="@drawable/button_stroke"
+                   android:padding="10dp"
+                   android:layout_gravity="center_vertical">
+
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/user_icon"
+                       />
+
+                   <TextView
+                       android:id="@+id/displayPeople"
+                       android:text="NO. OF PEOPLE"
+                       android:textColor="@color/white"
+                       android:textSize="24sp"
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+                       android:padding="5dp"
+                       />
+
+                   <TextView
+                       android:id="@+id/displayPrice"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="PRICE OF THING"
+                       android:fontFamily="@font/nunito_sans"
+                       android:textSize="20sp"
+                       android:textColor="@color/white"
+                       android:textAlignment="viewEnd"/>
+               </LinearLayout>
+
+                <TextView
+                    android:id="@+id/displayPlaceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name of Place"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/chopin_script"
+                    android:textSize="50sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/displayActiveDate"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Venue"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/displayActiveVenue"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location of Venue"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/displayActiveTimings"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timings"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/paymentBtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PROCEED TO PAYMENT"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="45dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+
+                        android:background="@drawable/button_stroke"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+                </RelativeLayout>
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
